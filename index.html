@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireReady — Get ready for your first job</title>
+  <meta name="description" content="HireReady helps high school students build clean resumes, answer job applications, and prepare for interviews." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="HireReady home">
+        <span class="logo-mark" aria-hidden="true">✓</span>
+        Hire<span class="logo-accent">Ready</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="questionnaire.html" class="btn btn-primary btn-sm">Start Questionnaire</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Get ready for your first job.</p>
+          <h1>Get Your First Job <span class="underline-accent">With&nbsp;Confidence</span></h1>
+          <p class="hero-sub">HireReady helps high school students build clean resumes, answer job applications, and prepare for interviews.</p>
+          <div class="hero-actions">
+            <a href="questionnaire.html" class="btn btn-primary">Start My Resume</a>
+            <a href="packages.html" class="btn btn-ghost">View Packages</a>
+          </div>
+          <p class="trust-line">Made for students applying to their first part-time job.</p>
+        </div>
+
+        <!-- Signature visual: a mock first-job resume -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="resume-card">
+            <div class="resume-head">
+              <div class="resume-avatar">JR</div>
+              <div>
+                <div class="resume-name">Jordan Rivera</div>
+                <div class="resume-role">Applying: Crew Member</div>
+              </div>
+            </div>
+            <div class="resume-line w-90"></div>
+            <div class="resume-line w-70"></div>
+            <div class="resume-section-label">Experience</div>
+            <ul class="resume-points">
+              <li><span class="check">✓</span> Volunteer — school food drive</li>
+              <li><span class="check">✓</span> Helped run family shop weekends</li>
+              <li><span class="check">✓</span> Robotics club — team lead</li>
+            </ul>
+            <div class="resume-line w-80"></div>
+            <div class="resume-line w-60"></div>
+          </div>
+          <div class="floating-chip chip-top">Resume ready ✓</div>
+          <div class="floating-chip chip-bottom">Interview scheduled ✓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Problem ===== -->
+    <section class="section problem">
+      <div class="container narrow">
+        <h2>“I want a job… but what do I even put on a resume?”</h2>
+        <p>Most students hit the same wall. You want a part-time job, but you've never had one — so the resume feels impossible. What counts as experience? How do you describe helping out at home or volunteering without it sounding made up? And when the application asks <em>“Why do you want to work here?”</em>, a one-line answer isn't going to cut it.</p>
+        <p>HireReady exists to fix exactly that. We take what you've actually done — school, clubs, sports, volunteering, chores, family responsibilities — and turn it into a resume and application answers that sound professional and real.</p>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="section how" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Three steps. No confusing templates, no guesswork.</p>
+        </div>
+        <div class="steps">
+          <div class="card step reveal">
+            <div class="step-num">1</div>
+            <h3>Fill out a short form</h3>
+            <p>Tell us about your school activities, responsibilities, and the kind of job you want. It takes about 10 minutes.</p>
+          </div>
+          <div class="card step reveal">
+            <div class="step-num">2</div>
+            <h3>Get your resume &amp; application help</h3>
+            <p>We build your clean, one-page resume and help you word your application answers so they sound professional.</p>
+          </div>
+          <div class="card step reveal">
+            <div class="step-num">3</div>
+            <h3>Apply with confidence</h3>
+            <p>Walk into any application — online or in person — knowing your resume and answers are ready to go.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Packages preview ===== -->
+    <section class="section packages" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <h2>Simple packages, simple prices</h2>
+          <p>Pick what you need. Every package includes a clean, one-page resume.</p>
+        </div>
+        <div class="preview-grid">
+          <div class="card preview-card reveal">
+            <h3>Resume Starter</h3>
+            <div class="price">$10</div>
+          </div>
+          <div class="card preview-card recommended reveal">
+            <div class="badge">Most popular</div>
+            <h3>Application Boost</h3>
+            <div class="price">$20</div>
+          </div>
+          <div class="card preview-card reveal">
+            <h3>Interview Ready</h3>
+            <div class="price">$30</div>
+          </div>
+          <div class="card preview-card reveal">
+            <h3>Full HireReady Pack</h3>
+            <div class="price">$45</div>
+          </div>
+        </div>
+        <div class="preview-cta">
+          <a href="packages.html" class="btn btn-outline">Compare Packages</a>
+          <a href="questionnaire.html" class="btn btn-primary">Start Questionnaire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why it works ===== -->
+    <section class="section why">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why HireReady works</h2>
+          <p>Because it's built around what students actually have — not what they don't.</p>
+        </div>
+        <div class="why-grid">
+          <div class="card why-card reveal">
+            <div class="why-icon">🎓</div>
+            <h3>Built for zero experience</h3>
+            <p>Designed for students with little or no work history. No fake jobs, no padding — just your real life, presented well.</p>
+          </div>
+          <div class="card why-card reveal">
+            <div class="why-icon">🔄</div>
+            <h3>Turns life into resume material</h3>
+            <p>School, clubs, volunteering, helping a family business, chores, and responsibilities all count — we show you how.</p>
+          </div>
+          <div class="card why-card reveal">
+            <div class="why-icon">✍️</div>
+            <h3>Professional, not fake</h3>
+            <p>Simple wording that sounds professional but still realistic. Managers can tell when a resume is overwritten — yours won't be.</p>
+          </div>
+          <div class="card why-card reveal">
+            <div class="why-icon">📍</div>
+            <h3>Made for real first jobs</h3>
+            <p>Restaurants, retail, camps, tutoring centers, grocery stores, and local businesses — the jobs students actually apply to.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <h2>Questions, answered</h2>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What if I have no work experience?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <p>That's exactly who HireReady is for. We turn school, clubs, volunteering, and responsibilities into real resume content that managers respect.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I use family business experience?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes — helping at a family shop, restaurant, or business absolutely counts. We'll word it so it shows real skills like customer service and reliability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What jobs can this help me apply for?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Any typical first job: restaurants, retail stores, summer camps, tutoring centers, grocery stores, movie theaters, and local businesses.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How do I receive my resume?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <p>You'll get a clean PDF sent to your email — ready to print, upload, or attach to any application.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How long does it take?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Most orders are ready within 2–3 days of submitting your form. Need it faster for a deadline? Mention it in the form and we'll do our best.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Final CTA ===== -->
+    <section class="section cta-final">
+      <div class="container narrow cta-inner">
+        <h2>Ready to apply smarter?</h2>
+        <p>Start with a clean resume and better application answers.</p>
+        <a href="questionnaire.html" class="btn btn-primary btn-lg">Start My Resume</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo footer-logo"><span class="logo-mark" aria-hidden="true">✓</span> Hire<span class="logo-accent">Ready</span></span>
+      <p>Get ready for your first job.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="questionnaire.html">Start Questionnaire</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <p class="footer-fine">© 2026 HireReady. A student-run service.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

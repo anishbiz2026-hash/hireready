@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start Your HireReady Questionnaire</title>
+  <meta name="description" content="Answer a few questions so we can build your resume, application answers, and interview prep around your real experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="HireReady home">
+        <span class="logo-mark" aria-hidden="true">✓</span>
+        Hire<span class="logo-accent">Ready</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="questionnaire.html" class="btn btn-primary btn-sm active">Start Questionnaire</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Start Your HireReady Questionnaire</h1>
+        <p>Answer a few questions so we can build your resume, application answers, and interview prep around your real experience.</p>
+      </div>
+    </section>
+
+    <section class="section order" id="order">
+      <div class="container narrow">
+
+        <form class="order-form" id="orderForm" novalidate>
+          <p class="form-hint">Takes about 10 minutes · Required fields are marked <span class="req">*</span></p>
+
+          <!-- ===== Student Info ===== -->
+          <fieldset class="form-group">
+            <legend>Student info</legend>
+
+            <div class="field">
+              <label for="fullName">Full name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" required autocomplete="name" />
+              <p class="field-error">Please enter your full name.</p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="grade">Grade <span class="req">*</span></label>
+                <select id="grade" name="grade" required>
+                  <option value="">Select your grade</option>
+                  <option value="8th">8th</option>
+                  <option value="9th">9th</option>
+                  <option value="10th">10th</option>
+                  <option value="11th">11th</option>
+                  <option value="12th">12th</option>
+                </select>
+                <p class="field-error">Please select your grade.</p>
+              </div>
+
+              <div class="field">
+                <label for="school">School <span class="req">*</span></label>
+                <input type="text" id="school" name="school" required />
+                <p class="field-error">Please enter your school.</p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+                <p class="field-error">Please enter a valid email address.</p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- ===== Job Goals ===== -->
+          <fieldset class="form-group">
+            <legend>Job goals</legend>
+
+            <div class="field">
+              <label for="jobTypes">What types of jobs are you applying for? <span class="req">*</span></label>
+              <textarea id="jobTypes" name="jobTypes" rows="2" required
+                placeholder="Example: frozen yogurt shop, Chick-fil-A, Target, tutoring center, summer camp"></textarea>
+              <p class="field-error">Please tell us what types of jobs you're applying for.</p>
+            </div>
+
+            <div class="field">
+              <label for="specificCompany">Do you have a specific company in mind? <span class="optional">(optional)</span></label>
+              <input type="text" id="specificCompany" name="specificCompany" />
+            </div>
+
+            <div class="field">
+              <label for="timeline">Are you applying now or preparing for later? <span class="req">*</span></label>
+              <select id="timeline" name="timeline" required>
+                <option value="">Select one</option>
+                <option value="Applying now">Applying now</option>
+                <option value="Preparing for summer">Preparing for summer</option>
+                <option value="Just getting ready">Just getting ready</option>
+              </select>
+              <p class="field-error">Please select an option.</p>
+            </div>
+          </fieldset>
+
+          <!-- ===== Experience ===== -->
+          <fieldset class="form-group">
+            <legend>Experience</legend>
+
+            <div class="field">
+              <label for="hadJob">Have you had a real job before? <span class="req">*</span></label>
+              <select id="hadJob" name="hadJob" required>
+                <option value="">Select one</option>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+                <option value="Kind of / family business / informal work">Kind of / family business / informal work</option>
+              </select>
+              <p class="field-error">Please select an option.</p>
+            </div>
+
+            <div class="field">
+              <label for="experience">Describe any work, family business, volunteering, babysitting, tutoring, chores, sports, clubs, school projects, or responsibilities you have had. <span class="req">*</span></label>
+              <textarea id="experience" name="experience" rows="4" required
+                placeholder="Don't worry about wording it perfectly — that's our job. Just list everything you can think of."></textarea>
+              <p class="field-error">Please describe your experience — anything counts.</p>
+            </div>
+
+            <div class="field">
+              <label for="skills">What are 3 skills you want employers to notice? <span class="req">*</span></label>
+              <input type="text" id="skills" name="skills" required
+                placeholder="Example: reliable, good with people, organized, fast learner" />
+              <p class="field-error">Please list a few skills.</p>
+            </div>
+          </fieldset>
+
+          <!-- ===== Availability ===== -->
+          <fieldset class="form-group">
+            <legend>Availability</legend>
+
+            <div class="field">
+              <label for="availability">When can you work? <span class="req">*</span></label>
+              <textarea id="availability" name="availability" rows="2" required
+                placeholder="Example: weekdays after 4 PM, weekends, summer mornings"></textarea>
+              <p class="field-error">Please tell us when you can work.</p>
+            </div>
+
+            <div class="field">
+              <label for="hoursPerWeek">How many hours per week do you want? <span class="optional">(optional)</span></label>
+              <input type="text" id="hoursPerWeek" name="hoursPerWeek" placeholder="Example: 10–15 hours" />
+            </div>
+          </fieldset>
+
+          <!-- ===== Application Help ===== -->
+          <fieldset class="form-group">
+            <legend>Application help</legend>
+
+            <div class="field">
+              <label for="stuckOn">What application questions are you stuck on? <span class="optional">(optional)</span></label>
+              <textarea id="stuckOn" name="stuckOn" rows="2"
+                placeholder='Example: "Why do you want to work here?" or "Describe a time you solved a problem"'></textarea>
+            </div>
+
+            <div class="checkbox-list">
+              <label class="checkbox-option">
+                <input type="checkbox" name="extraHelp" value="Help with references" />
+                <span>I need help with references</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="extraHelp" value="Help explaining family business experience" />
+                <span>I need help explaining family business experience</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="extraHelp" value="Help finding places to apply" />
+                <span>I need help finding places to apply</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="extraHelp" value="Help with interview answers" />
+                <span>I need help with interview answers</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- ===== Package ===== -->
+          <fieldset class="form-group" id="packageGroup">
+            <legend>Select a package <span class="req">*</span></legend>
+
+            <div class="package-options">
+              <label class="package-option">
+                <input type="radio" name="package" value="Resume Starter — $10" data-key="starter" required />
+                <span class="package-option-body">
+                  <span class="package-option-name">Resume Starter</span>
+                  <span class="package-option-price">$10</span>
+                </span>
+              </label>
+
+              <label class="package-option">
+                <input type="radio" name="package" value="Application Boost — $20" data-key="boost" />
+                <span class="package-option-body">
+                  <span class="package-option-name">Application Boost</span>
+                  <span class="package-option-price">$20</span>
+                </span>
+              </label>
+
+              <label class="package-option">
+                <input type="radio" name="package" value="Interview Ready — $30" data-key="interview" />
+                <span class="package-option-body">
+                  <span class="package-option-name">Interview Ready</span>
+                  <span class="package-option-price">$30</span>
+                </span>
+              </label>
+
+              <label class="package-option">
+                <input type="radio" name="package" value="Full HireReady Pack — $45" data-key="full" />
+                <span class="package-option-body">
+                  <span class="package-option-name">Full HireReady Pack</span>
+                  <span class="package-option-price">$45</span>
+                </span>
+              </label>
+            </div>
+            <p class="field-error">Please select a package.</p>
+          </fieldset>
+
+          <!-- ===== Notes ===== -->
+          <fieldset class="form-group">
+            <legend>Notes</legend>
+
+            <div class="field">
+              <label for="notes">Anything else we should know? <span class="optional">(optional)</span></label>
+              <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary btn-lg form-submit">Submit My Questionnaire</button>
+
+          <!-- Success message + payment step (hidden until submission) -->
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="form-success-icon">✓</div>
+            <h3>Questionnaire submitted!</h3>
+            <p id="successText">Your HireReady request has been saved. Continue to payment to complete your order.</p>
+
+            <div class="payment-step">
+              <button type="button" class="btn btn-primary" id="paymentBtn">Continue to Payment</button>
+              <p class="payment-note">Secure checkout powered by Stripe.</p>
+              <div class="payment-demo-msg" id="paymentDemoMsg" hidden>Payment setup is ready for Stripe connection.</div>
+            </div>
+          </div>
+
+          <p class="form-disclaimer">HireReady helps with resume and application preparation. It does not guarantee job placement.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo footer-logo"><span class="logo-mark" aria-hidden="true">✓</span> Hire<span class="logo-accent">Ready</span></span>
+      <p>Get ready for your first job.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="questionnaire.html">Start Questionnaire</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <p class="footer-fine">© 2026 HireReady. A student-run service.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="questionnaire.js"></script>
+</body>
+</html>

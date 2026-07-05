@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packages — HireReady</title>
+  <meta name="description" content="Simple, student-friendly pricing for resumes, application help, and interview prep." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="HireReady home">
+        <span class="logo-mark" aria-hidden="true">✓</span>
+        Hire<span class="logo-accent">Ready</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="packages.html" class="active">Packages</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="questionnaire.html" class="btn btn-primary btn-sm">Start Questionnaire</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Simple packages, simple prices</h1>
+        <p>Every package includes a clean, one-page resume built from your real experience. Pick the level of help you want — you can always mention extras in the questionnaire.</p>
+      </div>
+    </section>
+
+    <section class="section packages">
+      <div class="container">
+        <div class="pricing-grid">
+
+          <div class="card price-card reveal">
+            <h3>Resume Starter</h3>
+            <div class="price">$10</div>
+            <ul class="features">
+              <li>Clean 1-page resume PDF</li>
+              <li>Built from school, clubs, and real-life experience</li>
+              <li>Ready to print or upload</li>
+            </ul>
+            <a href="questionnaire.html?package=starter" class="btn btn-outline">Choose Starter</a>
+          </div>
+
+          <div class="card price-card recommended reveal">
+            <div class="badge">Most popular</div>
+            <h3>Application Boost</h3>
+            <div class="price">$20</div>
+            <ul class="features">
+              <li>Clean 1-page resume PDF</li>
+              <li>Help wording job application answers</li>
+              <li>Professional answers to "Why do you want to work here?"</li>
+            </ul>
+            <a href="questionnaire.html?package=boost" class="btn btn-primary">Choose Boost</a>
+          </div>
+
+          <div class="card price-card reveal">
+            <h3>Interview Ready</h3>
+            <div class="price">$30</div>
+            <ul class="features">
+              <li>Clean 1-page resume PDF</li>
+              <li>Application answer help</li>
+              <li>10 common interview answers, personalized to you</li>
+            </ul>
+            <a href="questionnaire.html?package=interview" class="btn btn-outline">Choose Interview Ready</a>
+          </div>
+
+          <div class="card price-card reveal">
+            <h3>Full HireReady Pack</h3>
+            <div class="price">$45</div>
+            <ul class="features">
+              <li>Clean 1-page resume PDF</li>
+              <li>Application answer help</li>
+              <li>Full interview prep</li>
+              <li>List of places to apply near you</li>
+            </ul>
+            <a href="questionnaire.html?package=full" class="btn btn-outline">Choose Full Pack</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-final">
+      <div class="container narrow cta-inner">
+        <h2>Not sure which one?</h2>
+        <p>Start the questionnaire — you can pick your package at the end, after you see what we ask.</p>
+        <a href="questionnaire.html" class="btn btn-primary btn-lg">Start Questionnaire</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo footer-logo"><span class="logo-mark" aria-hidden="true">✓</span> Hire<span class="logo-accent">Ready</span></span>
+      <p>Get ready for your first job.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="questionnaire.html">Start Questionnaire</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <p class="footer-fine">© 2026 HireReady. A student-run service.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
